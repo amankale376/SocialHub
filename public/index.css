@@ -1,0 +1,28 @@
+body{
+    display: block;
+    margin: 0px;
+}
+.BottomNavIcon{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+
+
+body{
+    background-color: #fff5fd;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    margin: 0;
+}
+
+@media (max-width: 720px) {
+ .BottomNavIcon{
+    padding-top:.1rem;
+    padding-bottom: .1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+ } 
+}

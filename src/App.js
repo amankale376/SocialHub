@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Profile from "./pages/profile";
+import {Route} from 'react-router-dom';
+import NewsFeed from "./pages/newsfeed";
+import Chats from "./pages/chats";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+   <Route exact path="/feed" component={NewsFeed}/>
+   <Route exact path="/chats" component={Chats}/>
+   <Route exact path="/profile" component={Profile}/>
+  </> 
 }
 
 export default App;
